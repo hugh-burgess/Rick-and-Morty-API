@@ -1,5 +1,5 @@
 {
-  "name": "Hugh Ricky and Morty API",
+  "name": "hugh-rick-and-morty-api",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
