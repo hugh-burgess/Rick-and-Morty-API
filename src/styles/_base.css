@@ -54,6 +54,8 @@ html {
 
 .svg-logo {
   margin: 20px;
+  border: var(--white-color-) 1px solid;
+  border-radius: 50%;
 }
 
 .header__button {
