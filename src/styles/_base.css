@@ -13,6 +13,7 @@ html {
 .grid-layout {
   display: grid;
   height: 100vh;
+  width: 100vw;
   min-width: 375px;
   min-height: 667px;
   grid-template-columns: [width] 100vw;
@@ -24,8 +25,10 @@ html {
   display: flex;
   justify-content: space-between;
   background-color: #24282f;
-  grid-column: width;
   grid-row: header;
+  grid-column: width;
+  position: fixed;
+  width: 100vw;
 }
 .main {
   background-color: #3c3e44;
@@ -46,6 +49,7 @@ html {
 .dropdown-menu {
   height: 20px;
   margin-top: 15px;
+  width: 100%;
 }
 
 .svg-logo {
@@ -58,13 +62,14 @@ html {
 }
 
 .searchbar {
-  width: 130px;
+  width: 100%;
   margin: 5px;
 }
 
 .header-wrapper {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .copyright {

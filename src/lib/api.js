@@ -20,8 +20,18 @@ export function getCharacters() {
     .then((response) => {
       loaded.textContent = "Loaded!";
 
-      if (response.ok) {
+      function sleep(ms) {
+        return new Promise((resolve) => setTimeout(resolve, ms));
+      }
+
+      async function delayedGreeting() {
         loaded.textContent = "Success!";
+        await sleep(2000);
+        loaded.textContent = "Load Data";
+      }
+
+      if (response.ok) {
+        delayedGreeting();
         return response.json();
       } else {
         loaded.textContent = "Ooops!";
