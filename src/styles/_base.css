@@ -70,9 +70,18 @@ html {
 .copyright {
   margin: 30px;
 }
+.info-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 .character-name {
-  padding: 20px;
+  padding: 5px;
+}
+
+.character-status {
+  padding: 5px;
 }
 
 .character-image {
@@ -84,5 +93,7 @@ html {
 .character {
   display: flex;
   width: 100vw;
+  height: auto;
   justify-content: space-between;
+  border-bottom: black 1px solid;
 }
