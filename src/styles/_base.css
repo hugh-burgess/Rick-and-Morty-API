@@ -78,6 +78,7 @@ html {
 
 .copyright {
   margin: 30px;
+  color: var(--white-color-);
 }
 .info-wrapper {
   display: flex;
