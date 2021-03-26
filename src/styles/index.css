@@ -1,3 +1,6 @@
-@import "_base.css";
-@import "_fonts.css";
-@import "_colors.css";
+/* Base Imports */
+@import "./_base.css";
+@import "./_fonts.css";
+@import "./_colors.css";
+
+/* Pages */

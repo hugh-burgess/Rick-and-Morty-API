@@ -7,4 +7,82 @@
 html {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
+  overflow-x: hidden;
+}
+
+.grid-layout {
+  display: grid;
+  height: 100vh;
+  min-width: 375px;
+  min-height: 667px;
+  grid-template-columns: [width] 100vw;
+  grid-template-rows: [header] 80px [main] auto [footer] 80px;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #24282f;
+  grid-column: width;
+  grid-row: header;
+}
+.main {
+  background-color: #3c3e44;
+  grid-column: width;
+  grid-row: main;
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer {
+  background-color: #24282f;
+  grid-column: width;
+  grid-row: footer;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.dropdown-menu {
+  height: 20px;
+  margin-top: 15px;
+}
+
+.svg-logo {
+  margin: 20px;
+}
+
+.header__button {
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.searchbar {
+  width: 130px;
+  margin: 5px;
+}
+
+.header-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.copyright {
+  margin: 30px;
+}
+
+.character-name {
+  padding: 20px;
+}
+
+.character-image {
+  border-radius: 50%;
+  height: 100px;
+  margin: 15px;
+}
+
+.character {
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
 }
