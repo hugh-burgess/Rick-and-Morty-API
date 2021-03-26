@@ -1,3 +1,8 @@
 :root {
-  /* Define your variable colors here */
+  --background-color-: #24282f;
+  --main-color-: #3c3e44;
+
+  --alive-color-: #33ff99;
+  --dead-color-: #ff2020;
+  --unknown-color-: #d4d0d0;
 }

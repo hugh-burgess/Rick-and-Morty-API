@@ -77,11 +77,11 @@ export function getCharacters() {
         wrapper.append(gender);
 
         if (character.status === "Alive") {
-          section.style.backgroundColor = " #33FF99";
+          section.style.backgroundColor = "var(--alive-color-)";
         } else if (character.status === "Dead") {
-          section.style.backgroundColor = "#ff2020";
+          section.style.backgroundColor = "var(--dead-color-)";
         } else if (character.status === "unknown") {
-          section.style.backgroundColor = "#d4d0d0";
+          section.style.backgroundColor = "var(--unknown-color-)";
         }
       });
     });

@@ -24,21 +24,21 @@ html {
 .header {
   display: flex;
   justify-content: space-between;
-  background-color: #24282f;
+  background-color: var(--background-color-);
   grid-row: header;
   grid-column: width;
   position: fixed;
   width: 100vw;
 }
 .main {
-  background-color: #3c3e44;
+  background-color: var(--main-color-);
   grid-column: width;
   grid-row: main;
   display: flex;
   flex-wrap: wrap;
 }
 .footer {
-  background-color: #24282f;
+  background-color: var(--background-color-);
   grid-column: width;
   grid-row: footer;
   text-align: center;
