@@ -7,4 +7,101 @@
 html {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
+  overflow-x: hidden;
+}
+
+.grid-layout {
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  min-width: 375px;
+  min-height: 667px;
+  grid-template-columns: [width] 100vw;
+  grid-template-rows: [header] 80px [main] auto [footer] 80px;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #24282f;
+  grid-row: header;
+  grid-column: width;
+  position: fixed;
+  width: 100vw;
+}
+.main {
+  background-color: #3c3e44;
+  grid-column: width;
+  grid-row: main;
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer {
+  background-color: #24282f;
+  grid-column: width;
+  grid-row: footer;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.dropdown-menu {
+  height: 20px;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.svg-logo {
+  margin: 20px;
+}
+
+.header__button {
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.searchbar {
+  width: 100%;
+  margin: 5px;
+}
+
+.header-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.copyright {
+  margin: 30px;
+}
+.info-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+}
+
+.character-name {
+  padding-right: 10px;
+  margin: 2px;
+}
+
+.character-info {
+  padding: 0px;
+  margin: 2px;
+}
+
+.character-image {
+  border-radius: 50%;
+  height: 100px;
+
+  margin: 15px;
+}
+
+.character {
+  display: flex;
+  width: 100vw;
+  height: auto;
+  justify-content: space-between;
+  border-bottom: black 1px solid;
 }
