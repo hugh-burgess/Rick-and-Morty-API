@@ -59,7 +59,8 @@ html {
 .header__button {
   border-radius: 10px;
   margin: 20px;
-  color: var(--white-color-);
+  color: var(--background-color-);
+  background-color: var(--white-color-);
 }
 
 .searchbar {
