@@ -110,3 +110,32 @@ html {
   justify-content: space-between;
   border-bottom: black 1px solid;
 }
+
+@media only screen and (min-width: 376px) {
+  .main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .character-image {
+    height: 80px;
+  }
+
+  .character {
+    height: 1fr;
+    border-radius: 10px;
+    width: 330px;
+    margin: 2px;
+  }
+  .character-name {
+    padding-right: 10px;
+    margin: 2px;
+    font-size: 20px;
+  }
+  .character-info {
+    padding: 0px;
+    margin: 0px;
+  }
+}
