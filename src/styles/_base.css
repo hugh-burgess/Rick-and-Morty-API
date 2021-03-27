@@ -128,12 +128,13 @@ html {
     height: 1fr;
     border-radius: 10px;
     width: 330px;
+    height: 130px;
     margin: 2px;
   }
   .character-name {
     padding-right: 10px;
     margin: 2px;
-    font-size: 20px;
+    font-size: 100%;
   }
   .character-info {
     padding: 0px;
