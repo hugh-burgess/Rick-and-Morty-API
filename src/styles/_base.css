@@ -111,12 +111,13 @@ html {
   border-bottom: black 1px solid;
 }
 
-@media only screen and (min-width: 376px) {
+@media only screen and (min-width: 380px) {
   .main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    background: var(--background-color-2-);
   }
 
   .character-image {
