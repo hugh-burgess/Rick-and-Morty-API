@@ -54,8 +54,10 @@ html {
 
 .svg-logo {
   margin: 20px;
+
   border: var(--white-color-) 1px solid;
   border-radius: 50%;
+  background: var(--white-color-);
 }
 
 .header__button {
@@ -129,7 +131,7 @@ html {
     border-radius: 10px;
     width: 330px;
     height: 130px;
-    margin: 2px;
+    margin: 10px;
   }
   .character-name {
     padding-right: 10px;
