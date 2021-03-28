@@ -34,7 +34,7 @@ export function getCharacters() {
         return response.json();
       } else {
         console.log(`Error: ${response.status}`);
-        loaded.textContent = "Select All and Press Here";
+        loaded.textContent = "Clear Search, Select All and Press Here";
       }
     })
     .then((dataObject) => {
@@ -42,6 +42,11 @@ export function getCharacters() {
       dataObject.results.forEach((character) => {
         const section = document.createElement("section");
         section.classList.add("character");
+
+        const anchor = document.createElement("a");
+        anchor.href = `https://rickandmortyapi.com/api/character/${character.id}`;
+        anchor.target = "_blank";
+
         const main = document.querySelector("main");
         main.classList.add("main");
 
@@ -69,9 +74,11 @@ export function getCharacters() {
         gender.textContent = `Gender: ${character.gender}`;
 
         main.append(section);
-        wrapper.append(h2);
-        section.append(img);
+        section.append(anchor);
         section.append(wrapper);
+
+        anchor.append(img);
+        wrapper.append(h2);
         wrapper.append(status);
         wrapper.append(species);
         wrapper.append(gender);

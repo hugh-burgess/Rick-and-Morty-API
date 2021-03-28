@@ -78,6 +78,12 @@ html {
   align-items: center;
 }
 
+.start-message {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
 .copyright {
   margin: 30px;
   color: var(--white-color-);
@@ -101,7 +107,7 @@ html {
 .character-image {
   border-radius: 50%;
   height: 100px;
-
+  border: rgb(0, 0, 0) 1px solid;
   margin: 15px;
 }
 
@@ -143,5 +149,11 @@ html {
   .character-info {
     padding: 0px;
     margin: 0px;
+  }
+  .start-message {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
   }
 }
