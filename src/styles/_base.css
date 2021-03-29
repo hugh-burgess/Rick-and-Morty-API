@@ -54,7 +54,8 @@ html {
 
 .svg-logo {
   margin: 20px;
-
+  -webkit-box-shadow: 0px 3px 15px 3px rgba(0, 0, 0, 0.55);
+  box-shadow: 0px 3px 15px 3px rgba(0, 0, 0, 0.55);
   border: var(--white-color-) 1px solid;
   border-radius: 50%;
   background: var(--white-color-);
@@ -65,6 +66,8 @@ html {
   margin: 20px;
   color: var(--background-color-);
   background-color: var(--white-color-);
+  -webkit-box-shadow: 0px 3px 15px 3px rgba(0, 0, 0, 0.55);
+  box-shadow: 0px 3px 15px 3px rgba(0, 0, 0, 0.55);
 }
 
 .searchbar {
