@@ -152,7 +152,7 @@ html {
   }
   .start-message {
     text-align: center;
-    color: white;
+    color: var(--white-color-);
     font-size: 20px;
     padding: 10px;
   }
